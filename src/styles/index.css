@@ -7,14 +7,9 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Hide scrollbar for horizontal scroll containers */
@@ -42,21 +37,6 @@ body {
     font-size: 16px !important;
   }
   
-  /* Prevent pull-to-refresh bounce effect */
-  body {
-    overscroll-behavior-y: contain;
-    overflow-x: hidden;
-    width: 100%;
-    position: relative;
-  }
-  
-  /* Optimize touch interactions */
-  button,
-  a,
-  [role="button"] {
-    touch-action: manipulation;
-  }
-  
   /* Prevent layout shifts and glitches on mobile */
   img,
   video {
@@ -65,8 +45,8 @@ body {
   }
 }
 
-/* Prevent visual glitches during animations and transitions */
-* {
+/* Prevent visual glitches during animations and transitions - only on animated elements */
+.animate-backface {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000;

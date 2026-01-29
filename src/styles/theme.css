@@ -133,10 +133,6 @@
     text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Prevent bounce/overscroll effects that can cause glitches */
-    overscroll-behavior: none;
-    /* Disable double-tap zoom */
-    touch-action: manipulation;
   }
 
   /* Prevent zoom on input focus - iOS Safari fix */
@@ -151,14 +147,12 @@
   /* Smooth transitions and prevent glitches */
   * {
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
   }
 
   /* Prevent horizontal scroll/glitches */
-  html,
-  body {
+  html, body {
     overflow-x: hidden;
-    position: relative;
+    overflow-y: auto;
     width: 100%;
   }
 
