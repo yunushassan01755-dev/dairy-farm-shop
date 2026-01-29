@@ -14,7 +14,7 @@ const premiumCattleList = [
     weight: 820,
     age: '4.5 years',
     price: 325000,
-    image: 'https://myimgs.org/storage/images/15674/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow10.jpeg',
     features: ['Premium Genetics', 'Maximum Meat Yield', 'Vet Certified Excellence', 'Superior Build'],
     badge: 'Ultra Premium',
     meatYield: '530 kg',
@@ -27,7 +27,7 @@ const premiumCattleList = [
     weight: 880,
     age: '5 years',
     price: 395000,
-    image: 'https://myimgs.org/storage/images/15671/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow11.jpeg',
     features: ['Largest in Collection', 'World-Class Genetics', 'Premium Marbling', 'Exceptional Quality'],
     badge: 'Ultra Premium',
     meatYield: '570 kg',
@@ -40,7 +40,7 @@ const premiumCattleList = [
     weight: 850,
     age: '4.5 years',
     price: 295000,
-    image: 'https://myimgs.org/storage/images/15673/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow12.jpeg',
     features: ['Muscular Build', 'Superior Quality', 'Premium Genetics', 'Excellent Health'],
     badge: 'Ultra Premium',
     meatYield: '550 kg',
@@ -56,7 +56,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
 
   return (
     <div className="mb-16 max-w-7xl mx-auto">
-      <motion.div 
+      <motion.div
         className="text-center mb-8"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
           >
             {/* CROWN JEWEL Badge */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-20">
-              <motion.div 
+              <motion.div
                 className="bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-white px-8 py-4 rounded-b-3xl font-black text-lg shadow-2xl flex items-center gap-3 border-4 border-yellow-400"
                 animate={{
                   boxShadow: [
@@ -114,7 +114,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              
+
               {/* Weight Badge */}
               <div className="absolute bottom-6 left-6 bg-yellow-400 text-gray-900 px-6 py-3 rounded-full shadow-2xl border-2 border-yellow-700">
                 <p className="text-xl font-black flex items-center gap-2">
@@ -131,7 +131,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
               </div>
 
               {/* Largest Badge */}
-              <motion.div 
+              <motion.div
                 className="absolute top-20 left-6 bg-red-600 text-white px-4 py-2 rounded-full shadow-xl font-bold text-sm"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
@@ -192,7 +192,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
                 <p className="text-base text-gray-600 font-semibold mt-2 text-center">
                   ৳{Math.round(lalBahadhur.price / lalBahadhur.weight)} per kg
                 </p>
-                <motion.p 
+                <motion.p
                   className="text-base text-red-600 font-black mt-3 text-center"
                   animate={{ opacity: [1, 0.7, 1] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -246,7 +246,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                
+
                 {/* Weight Badge */}
                 <div className="absolute bottom-4 left-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full shadow-xl">
                   <p className="text-base font-black flex items-center gap-2">
@@ -336,7 +336,7 @@ function PremiumCattleSection({ openModal, handlePreOrder }) {
       </div>
 
       {/* Premium Collection Info */}
-      <motion.div 
+      <motion.div
         className="mt-10 bg-gradient-to-r from-yellow-100 via-yellow-50 to-yellow-100 border-2 border-yellow-400 rounded-2xl p-8 text-center shadow-lg"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

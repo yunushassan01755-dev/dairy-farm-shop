@@ -12,7 +12,7 @@ const lalBahadhurCattle = {
   weight: 880,
   age: '5 years',
   price: 395000,
-  image: 'https://myimgs.org/storage/images/15671/WhatsApp Image 2026-01-14 at 22.jpeg',
+  image: '/image/Cow11.jpeg',
   features: ['Largest in Collection', 'World-Class Genetics', 'Show Champion', 'Premium Marbling'],
   badge: 'Ultra Premium',
   meatYield: '570 kg',

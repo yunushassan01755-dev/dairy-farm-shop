@@ -14,7 +14,7 @@ const premiumCattleList = [
     weight: 820,
     age: '4.5 years',
     price: 325000,
-    image: 'https://myimgs.org/storage/images/15674/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow10.jpeg',
     features: ['Premium Genetics', 'Maximum Meat Yield', 'Vet Certified Excellence', 'Superior Build'],
     badge: 'Ultra Premium',
     meatYield: '530 kg',
@@ -27,7 +27,7 @@ const premiumCattleList = [
     weight: 880,
     age: '5 years',
     price: 395000,
-    image: 'https://myimgs.org/storage/images/15671/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow11.jpeg',
     features: ['Largest in Collection', 'World-Class Genetics', 'Premium Marbling', 'Exceptional Quality'],
     badge: 'Ultra Premium',
     meatYield: '570 kg',
@@ -40,7 +40,7 @@ const premiumCattleList = [
     weight: 850,
     age: '4.5 years',
     price: 295000,
-    image: 'https://myimgs.org/storage/images/15673/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow12.jpeg',
     features: ['Muscular Build', 'Superior Quality', 'Premium Genetics', 'Excellent Health'],
     badge: 'Ultra Premium',
     meatYield: '550 kg',
@@ -52,7 +52,7 @@ export function PremiumCattlePyramid({ onAddToCart, openModal }: { onAddToCart: 
   return (
     <div className="mb-16 max-w-7xl mx-auto relative">
       {/* Decorative Background Elements - Floating Golden Particles */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 -z-10 pointer-events-none"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -82,7 +82,7 @@ export function PremiumCattlePyramid({ onAddToCart, openModal }: { onAddToCart: 
       </motion.div>
 
       {/* Premium Header with Animations */}
-      <motion.div 
+      <motion.div
         className="text-center mb-6 relative"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +114,7 @@ export function PremiumCattlePyramid({ onAddToCart, openModal }: { onAddToCart: 
               ease: "easeInOut"
             }}
           />
-          
+
           {/* Rotating Crown */}
           <motion.div
             animate={{ rotate: [0, 360] }}
@@ -122,12 +122,12 @@ export function PremiumCattlePyramid({ onAddToCart, openModal }: { onAddToCart: 
           >
             <Crown size={20} className="md:w-6 md:h-6 text-gray-900 drop-shadow" />
           </motion.div>
-          
+
           <span className="text-base md:text-lg relative z-10 drop-shadow">ULTRA PREMIUM COLLECTION</span>
-          
+
           {/* Wobbling Trophy */}
           <motion.div
-            animate={{ 
+            animate={{
               scale: [1, 1.15, 1],
               rotate: [0, 8, -8, 0]
             }}
@@ -136,9 +136,9 @@ export function PremiumCattlePyramid({ onAddToCart, openModal }: { onAddToCart: 
             <Trophy size={20} className="md:w-6 md:h-6 text-gray-900 drop-shadow" />
           </motion.div>
         </motion.div>
-        
+
         {/* Pulsing Subtitle */}
-        <motion.p 
+        <motion.p
           className="text-gray-700 font-semibold text-sm md:text-base flex items-center justify-center gap-2"
           animate={{
             opacity: [0.7, 1, 0.7]
@@ -165,7 +165,7 @@ export function PremiumCattlePyramid({ onAddToCart, openModal }: { onAddToCart: 
       <div className="space-y-4">
         {/* TOP CARD - Crown Jewel */}
         <TopPremiumCard cattle={premiumCattleList[1]} onAddToCart={onAddToCart} openModal={openModal} />
-        
+
         {/* BOTTOM CARDS - Side by Side */}
         <div className="grid grid-cols-2 gap-3 sm:gap-6 md:gap-6">
           <BottomPremiumCard cattle={premiumCattleList[0]} onAddToCart={onAddToCart} openModal={openModal} index={0} />
@@ -196,11 +196,11 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
         }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
-      
+
       <motion.div
         className="group relative bg-gradient-to-br from-yellow-50 via-white to-yellow-50 rounded-3xl overflow-hidden shadow-2xl border-4 border-red-500 cursor-pointer"
         onClick={() => openModal(cattle)}
-        whileHover={{ 
+        whileHover={{
           y: -12,
           scale: 1.01,
           boxShadow: "0 40px 80px rgba(220, 38, 38, 0.35)",
@@ -220,7 +220,7 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
 
         {/* Crown Jewel Badge */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-20">
-          <motion.div 
+          <motion.div
             className="bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-white px-3 py-2 sm:px-6 sm:py-3 md:px-6 md:py-2 rounded-b-2xl sm:rounded-b-3xl md:rounded-b-2xl font-black text-xs sm:text-sm md:text-base shadow-2xl flex items-center gap-1 sm:gap-2 md:gap-2 border-2 sm:border-4 md:border-2 border-yellow-400 relative overflow-hidden"
             animate={{
               boxShadow: [
@@ -238,9 +238,9 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
               animate={{ x: ["-150%", "150%"] }}
               transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1.5 }}
             />
-            
+
             <motion.div
-              animate={{ 
+              animate={{
                 y: [0, -4, 0],
                 rotate: [0, 8, -8, 0]
               }}
@@ -251,7 +251,7 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
             <span className="hidden sm:inline relative z-10">👑 CROWN JEWEL - BEST 👑</span>
             <span className="sm:hidden relative z-10">👑 BEST 👑</span>
             <motion.div
-              animate={{ 
+              animate={{
                 scale: [1, 1.25, 1],
                 rotate: [0, 18, -18, 0]
               }}
@@ -272,7 +272,7 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
             transition={{ duration: 0.6 }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-          
+
           {/* Sparkling Stars on Hover */}
           <motion.div className="absolute inset-0 pointer-events-none">
             {[...Array(8)].map((_, i) => (
@@ -296,9 +296,9 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
               </motion.div>
             ))}
           </motion.div>
-          
+
           {/* Animated Badges */}
-          <motion.div 
+          <motion.div
             className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 md:bottom-3 md:left-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-3 py-1.5 sm:px-4 sm:py-2 md:px-3 md:py-1.5 rounded-full shadow-2xl border-2 border-yellow-700"
             whileHover={{ scale: 1.1, rotate: 3 }}
             animate={{
@@ -321,7 +321,7 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="absolute top-2 left-2 sm:top-4 sm:left-4 md:top-3 md:left-3 bg-white/95 backdrop-blur-sm text-gray-900 px-3 py-1.5 sm:px-4 sm:py-2 md:px-3 md:py-1.5 rounded-full shadow-xl border-2 border-yellow-500"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -333,9 +333,9 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="absolute top-10 left-2 sm:top-14 sm:left-4 md:top-11 md:left-3 bg-gradient-to-r from-red-600 to-red-700 text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-3 md:py-1 rounded-full shadow-xl font-bold text-[10px] sm:text-xs md:text-xs border border-red-400"
-            animate={{ 
+            animate={{
               scale: [1, 1.12, 1],
               boxShadow: [
                 "0 6px 20px rgba(220, 38, 38, 0.4)",
@@ -358,7 +358,7 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
             backgroundSize: "24px 24px"
           }} />
 
-          <motion.h3 
+          <motion.h3
             className="font-black text-gray-900 text-xl sm:text-2xl md:text-2xl lg:text-3xl mb-2 sm:mb-3 md:mb-2 group-hover:text-yellow-700 transition-colors relative z-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -366,8 +366,8 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
           >
             {cattle.name}
           </motion.h3>
-          
-          <motion.p 
+
+          <motion.p
             className="text-sm sm:text-base md:text-base text-gray-700 font-semibold mb-4 sm:mb-5 md:mb-3 flex items-center gap-2 relative z-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -390,13 +390,13 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
               { label: "Grade", value: "A+++", color: "red", delay: 0.2 },
               { label: "Rank", value: "#1", color: "red", delay: 0.3 }
             ].map((stat, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 className={`${stat.color === 'yellow' ? 'bg-gradient-to-br from-yellow-100 to-yellow-50 border-yellow-300' : 'bg-gradient-to-br from-red-100 to-red-50 border-red-300'} p-2 sm:p-3 md:p-2 rounded-lg sm:rounded-xl border sm:border-2 relative overflow-hidden`}
                 initial={{ opacity: 0, scale: 0.8, y: 20 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 0.4 + stat.delay, type: "spring", stiffness: 200 }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.08,
                   y: -4,
                   boxShadow: "0 6px 20px rgba(0,0,0,0.12)"
@@ -411,15 +411,15 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
           {/* Features with Icon Rotation */}
           <div className="space-y-1.5 sm:space-y-2 md:space-y-1.5 mb-4 sm:mb-5 md:mb-3 relative z-10">
             {cattle.features.map((feature: string, idx: number) => (
-              <motion.div 
-                key={idx} 
+              <motion.div
+                key={idx}
                 className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm md:text-sm text-gray-700 font-semibold group/feature"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7 + idx * 0.1, type: "spring" }}
                 whileHover={{ x: 8 }}
               >
-                <motion.div 
+                <motion.div
                   className="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full p-0.5 sm:p-1 shadow-md"
                   whileHover={{ rotate: 180, scale: 1.2 }}
                   transition={{ duration: 0.5 }}
@@ -432,14 +432,14 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
           </div>
 
           {/* Animated Price */}
-          <motion.div 
+          <motion.div
             className="mb-4 sm:mb-5 md:mb-3 pb-4 sm:pb-5 md:pb-3 border-t-2 border-yellow-300 pt-4 sm:pt-5 md:pt-3 relative z-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
             <div className="flex items-baseline gap-2 justify-center">
-              <motion.span 
+              <motion.span
                 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-yellow-600 to-red-600"
                 animate={{
                   backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
@@ -453,9 +453,9 @@ function TopPremiumCard({ cattle, onAddToCart, openModal }: any) {
             <p className="text-xs sm:text-sm md:text-sm text-gray-600 font-semibold mt-1 sm:mt-2 text-center">
               ৳{Math.round(cattle.price / cattle.weight)} per kg
             </p>
-            <motion.p 
+            <motion.p
               className="text-xs sm:text-sm md:text-sm text-red-600 font-black mt-2 sm:mt-3 md:mt-2 text-center flex items-center justify-center gap-2"
-              animate={{ 
+              animate={{
                 opacity: [0.8, 1, 0.8],
                 scale: [1, 1.03, 1]
               }}
@@ -536,7 +536,7 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
       <motion.div
         className="group relative bg-gradient-to-br from-yellow-50 via-white to-yellow-50 rounded-xl md:rounded-2xl overflow-hidden shadow-xl border-2 md:border-3 border-yellow-400 cursor-pointer"
         onClick={() => openModal(cattle)}
-        whileHover={{ 
+        whileHover={{
           y: -10,
           scale: 1.02,
           borderColor: "rgb(251 191 36)",
@@ -546,7 +546,7 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
       >
         {/* Premium Badge */}
         <div className="absolute top-0 right-0 z-10">
-          <motion.div 
+          <motion.div
             className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-2 py-1 md:px-3 md:py-1.5 rounded-bl-xl md:rounded-bl-2xl font-bold text-[10px] md:text-xs shadow-lg flex items-center gap-1 overflow-hidden"
             whileHover={{ scale: 1.05 }}
           >
@@ -576,7 +576,7 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
             transition={{ duration: 0.6 }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          
+
           {/* Floating Particles */}
           {[...Array(4)].map((_, i) => (
             <motion.div
@@ -598,8 +598,8 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
               }}
             />
           ))}
-          
-          <motion.div 
+
+          <motion.div
             className="absolute bottom-2 left-2 md:bottom-4 md:left-4 bg-yellow-400 text-gray-900 px-2 py-1 md:px-4 md:py-2 rounded-full shadow-xl border border-yellow-700"
             whileHover={{ scale: 1.1, rotate: 5 }}
           >
@@ -609,7 +609,7 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="absolute top-2 left-2 md:top-4 md:left-4 bg-white/95 backdrop-blur-sm text-gray-900 px-2 py-1 md:px-4 md:py-2 rounded-full shadow-xl"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -620,9 +620,9 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="absolute top-2 right-2 md:top-4 md:right-4 bg-yellow-400 rounded-full p-1 md:p-2 shadow-xl"
-            animate={{ 
+            animate={{
               rotate: [0, 360],
               scale: [1, 1.1, 1]
             }}
@@ -634,7 +634,7 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
 
         {/* Content */}
         <div className="p-3 md:p-4 bg-gradient-to-br from-white to-yellow-50/30">
-          <motion.h3 
+          <motion.h3
             className="font-black text-gray-900 text-sm md:text-xl mb-1 md:mb-1.5 group-hover:text-yellow-700 transition-colors leading-tight"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -654,7 +654,7 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
               { label: "Meat", value: cattle.meatYield },
               { label: "A+++", value: "Grade" }
             ].map((stat, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 className="bg-yellow-100 p-1.5 md:p-2 rounded-md md:rounded-lg border border-yellow-300"
                 initial={{ opacity: 0, y: 10 }}
@@ -671,8 +671,8 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
           {/* Features - Hidden on mobile */}
           <div className="hidden md:block space-y-1.5 mb-3">
             {cattle.features.slice(0, 2).map((feature: string, featureIdx: number) => (
-              <motion.div 
-                key={featureIdx} 
+              <motion.div
+                key={featureIdx}
                 className="flex items-center gap-2 text-xs text-gray-700 font-semibold"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -688,14 +688,14 @@ function BottomPremiumCard({ cattle, onAddToCart, openModal, index }: any) {
           </div>
 
           {/* Price */}
-          <motion.div 
+          <motion.div
             className="mb-3 md:mb-3 pb-3 md:pb-3 border-t border-yellow-300 md:border-t-2 pt-3 md:pt-3"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
             <div className="flex items-baseline gap-1 justify-center">
-              <motion.span 
+              <motion.span
                 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-800"
                 animate={{
                   backgroundPosition: ["0%", "100%", "0%"],

@@ -10,7 +10,7 @@ const premiumCattleList = [
     weight: 820,
     age: '4.5 years',
     price: 325000,
-    image: 'https://myimgs.org/storage/images/15674/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow10.jpeg',
     features: ['Premium Genetics', 'Maximum Meat Yield', 'Vet Certified Excellence', 'Superior Build'],
     badge: 'Ultra Premium',
     meatYield: '530 kg',
@@ -23,7 +23,7 @@ const premiumCattleList = [
     weight: 880,
     age: '5 years',
     price: 395000,
-    image: 'https://myimgs.org/storage/images/15671/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow11.jpeg',
     features: ['Largest in Collection', 'World-Class Genetics', 'Premium Marbling', 'Exceptional Quality'],
     badge: 'Ultra Premium',
     meatYield: '570 kg',
@@ -36,7 +36,7 @@ const premiumCattleList = [
     weight: 850,
     age: '4.5 years',
     price: 295000,
-    image: 'https://myimgs.org/storage/images/15673/WhatsApp Image 2026-01-14 at 22.jpeg',
+    image: '/image/Cow12.jpeg',
     features: ['Muscular Build', 'Superior Quality', 'Premium Genetics', 'Excellent Health'],
     badge: 'Ultra Premium',
     meatYield: '550 kg',
@@ -67,11 +67,11 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
           }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         />
-        
+
         <motion.div
           className="group relative bg-gradient-to-br from-yellow-50 via-white to-yellow-50 rounded-3xl overflow-hidden shadow-2xl border-4 border-red-500 cursor-pointer"
           onClick={() => openModal(topCattle)}
-          whileHover={{ 
+          whileHover={{
             y: -12,
             scale: 1.01,
             boxShadow: "0 40px 80px rgba(220, 38, 38, 0.35)",
@@ -90,7 +90,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
 
           {/* Crown Jewel Badge */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-20">
-            <motion.div 
+            <motion.div
               className="bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-white px-3 py-2 sm:px-6 sm:py-3 md:px-6 md:py-2 rounded-b-2xl sm:rounded-b-3xl md:rounded-b-2xl font-black text-xs sm:text-sm md:text-base shadow-2xl flex items-center gap-1 sm:gap-2 md:gap-2 border-2 sm:border-4 md:border-2 border-yellow-400 relative overflow-hidden"
               animate={{
                 boxShadow: [
@@ -125,7 +125,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
             />
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-            
+
             {/* Floating sparkles */}
             {[...Array(6)].map((_, i) => (
               <motion.div
@@ -146,8 +146,8 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
                 }}
               />
             ))}
-            
-            <motion.div 
+
+            <motion.div
               className="absolute bottom-3 left-3 sm:bottom-6 sm:left-6 md:bottom-4 md:left-4 bg-gradient-to-r from-red-500 to-red-600 text-white px-3 py-2 sm:px-6 sm:py-3 md:px-4 md:py-2 rounded-full shadow-2xl border-2 sm:border-4 md:border-2 border-yellow-400 relative overflow-hidden"
               whileHover={{ scale: 1.1, rotate: 5 }}
             >
@@ -174,7 +174,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
           {/* Content */}
           <div className="p-4 sm:p-8 md:p-6 bg-gradient-to-br from-white to-yellow-50/30 relative">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
-            
+
             <h3 className="font-black text-gray-900 text-xl sm:text-3xl md:text-2xl mb-1 sm:mb-3 md:mb-2 group-hover:text-red-600 transition-colors">
               {topCattle.name}
             </h3>
@@ -190,7 +190,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
                 { label: "Grade", value: "A+++" },
                 { label: "Status", value: "Premium" }
               ].map((stat, idx) => (
-                <motion.div 
+                <motion.div
                   key={idx}
                   className="bg-gradient-to-br from-red-100 to-yellow-50 p-2 sm:p-4 md:p-3 rounded-lg sm:rounded-2xl md:rounded-xl border-2 sm:border-4 md:border-2 border-red-300 relative overflow-hidden"
                   whileHover={{ scale: 1.05, y: -4 }}
@@ -216,7 +216,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
 
             <div className="mb-4 sm:mb-6 md:mb-4 pb-4 sm:pb-6 md:pb-4 border-t-2 sm:border-t-4 md:border-t-2 border-red-300 pt-4 sm:pt-6 md:pt-4">
               <div className="flex items-baseline gap-1 sm:gap-2 md:gap-1 justify-center">
-                <motion.span 
+                <motion.span
                   className="text-2xl sm:text-5xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-600"
                   animate={{
                     backgroundPosition: ["0%", "100%", "0%"],
@@ -280,7 +280,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
             <motion.div
               className="group relative bg-gradient-to-br from-yellow-50 via-white to-yellow-50 rounded-xl md:rounded-2xl overflow-hidden shadow-xl border-2 md:border-3 border-yellow-400 cursor-pointer"
               onClick={() => openModal(cattle)}
-              whileHover={{ 
+              whileHover={{
                 y: -10,
                 scale: 1.02,
                 boxShadow: "0 25px 50px rgba(234, 179, 8, 0.3)"
@@ -313,7 +313,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                
+
                 {/* Sparkles */}
                 {[...Array(4)].map((_, i) => (
                   <motion.div
@@ -334,8 +334,8 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
                     }}
                   />
                 ))}
-                
-                <motion.div 
+
+                <motion.div
                   className="absolute bottom-2 left-2 md:bottom-4 md:left-4 bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-2 py-1 md:px-4 md:py-2 rounded-full shadow-xl border border-yellow-700 relative overflow-hidden"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
@@ -362,7 +362,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
               {/* Content */}
               <div className="p-3 md:p-4 bg-gradient-to-br from-white to-yellow-50/30 relative">
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent"></div>
-                
+
                 <h3 className="font-black text-gray-900 text-sm md:text-xl mb-1 md:mb-1.5 group-hover:text-yellow-700 transition-colors leading-tight">
                   {cattle.name}
                 </h3>
@@ -377,7 +377,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
                     { label: "Meat", value: cattle.meatYield },
                     { label: "A+++", value: "Grade" }
                   ].map((stat, idx) => (
-                    <motion.div 
+                    <motion.div
                       key={idx}
                       className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-1.5 md:p-2 rounded-md md:rounded-lg border border-yellow-300 relative overflow-hidden"
                       whileHover={{ scale: 1.05, y: -2 }}
@@ -403,7 +403,7 @@ export function PremiumCattleCards({ onAddToCart, openModal }: { onAddToCart: (c
 
                 <div className="mb-3 md:mb-3 pb-3 md:pb-3 border-t border-yellow-300 md:border-t-2 pt-3 md:pt-3">
                   <div className="flex items-baseline gap-1 justify-center">
-                    <motion.span 
+                    <motion.span
                       className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-800"
                       animate={{
                         backgroundPosition: ["0%", "100%", "0%"],
