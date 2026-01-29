@@ -130,7 +130,7 @@ const cattleList = [
     weight: 520,
     age: '3 years',
     price: 190000,
-    image: 'https://myimgs.org/storage/images/15660/WhatsApp Image 2026-01-14 at 20.jpeg',
+    image: '/image/Cow7.jpeg',
     features: ['Premium Quality', 'Strong Build', 'Excellent Meat Quality'],
     badge: 'Featured',
     meatYield: '335 kg'
@@ -142,7 +142,7 @@ const cattleList = [
     weight: 510,
     age: '3 years',
     price: 178000,
-    image: 'https://myimgs.org/storage/images/15663/WhatsApp Image 2026-01-14 at 21.jpeg',
+    image: '/image/Cow8.jpeg',
     features: ['Strong Build', 'Well Fed', 'Healthy & Active'],
     badge: 'Featured',
     meatYield: '325 kg'
