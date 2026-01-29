@@ -106,7 +106,7 @@ const cattleList = [
     weight: 490,
     age: '3 years',
     price: 168000,
-    image: 'https://myimgs.org/storage/images/15658/WhatsApp Image 2026-01-14 at 20.jpeg',
+    image: '/image/Cow5.png.jpeg',
     features: ['Natural Cross Breed', 'Healthy & Active', 'Farm Raised'],
     badge: 'Featured',
     meatYield: '310 kg'
@@ -118,7 +118,7 @@ const cattleList = [
     weight: 460,
     age: '2.5 years',
     price: 158000,
-    image: 'https://myimgs.org/storage/images/15656/WhatsApp Image 2026-01-14 at 19.jpeg',
+    image: '/image/Cow6.jpeg',
     features: ['Natural Breed', 'Healthy & Active', 'Farm Raised'],
     badge: 'Featured',
     meatYield: '295 kg'
