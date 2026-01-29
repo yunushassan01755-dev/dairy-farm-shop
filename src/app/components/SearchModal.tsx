@@ -158,7 +158,7 @@ const cattleProducts = [
     weight: 470,
     age: '2.5 years',
     price: 160000,
-    image: 'https://myimgs.org/storage/images/15397/WhatsApp Image 2026-01-12 at 01.jpeg',
+    image: '/image/Cow4.png',
     badge: 'Featured',
     category: 'Cattle',
     description: 'Natural Breed, Healthy & Active, Farm Raised',

@@ -260,7 +260,7 @@ export function HeroSlider() {
                             { img: '/image/Cow1.png', code: 'CODE:101', name: 'Shobon' },
                             { img: '/image/Cow3.png', code: 'CODE:103', name: 'Kallu' },
                             { img: '/image/Cow2.png', code: 'CODE:102', name: 'Padma' },
-                            { img: 'https://myimgs.org/storage/images/15397/WhatsApp Image 2026-01-12 at 01.jpeg', code: 'CODE:104', name: 'Bahadhur' }
+                            { img: '/image/Cow4.png', code: 'CODE:104', name: 'Bahadhur' }
                           ].map((cattle, idx) => (
                             <motion.div
                               key={idx}
