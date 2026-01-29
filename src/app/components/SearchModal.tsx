@@ -119,7 +119,7 @@ const cattleProducts = [
     weight: 450,
     age: '2.5 years',
     price: 155000,
-    image: 'https://myimgs.org/storage/images/15392/WhatsApp Image 2026-01-12 at 00.jpeg',
+    image: '/image/Cow1.png',
     badge: 'Featured',
     category: 'Cattle',
     description: 'Natural Breed, Healthy & Active, Farm Raised',
@@ -289,7 +289,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     // Debounce search
     const timer = setTimeout(() => {
       const query = searchQuery.toLowerCase().trim();
-      
+
       // Filter products based on search query
       const filtered = allProducts.filter(product => {
         // Apply category filter first
@@ -418,43 +418,39 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                 <div className="flex gap-2 mt-3 overflow-x-auto pb-1">
                   <button
                     onClick={() => setSelectedCategory('all')}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all ${
-                      selectedCategory === 'all'
+                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all ${selectedCategory === 'all'
                         ? 'bg-yellow-400 text-gray-900'
                         : 'bg-white/20 text-white hover:bg-white/30'
-                    }`}
+                      }`}
                   >
                     All Products
                   </button>
                   <button
                     onClick={() => setSelectedCategory('Cattle')}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${
-                      selectedCategory === 'Cattle'
+                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${selectedCategory === 'Cattle'
                         ? 'bg-yellow-400 text-gray-900'
                         : 'bg-white/20 text-white hover:bg-white/30'
-                    }`}
+                      }`}
                   >
                     <Package className="w-4 h-4" />
                     Cattle
                   </button>
                   <button
                     onClick={() => setSelectedCategory('Milk Products')}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${
-                      selectedCategory === 'Milk Products'
+                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${selectedCategory === 'Milk Products'
                         ? 'bg-yellow-400 text-gray-900'
                         : 'bg-white/20 text-white hover:bg-white/30'
-                    }`}
+                      }`}
                   >
                     <Milk className="w-4 h-4" />
                     Milk
                   </button>
                   <button
                     onClick={() => setSelectedCategory('Meat Products')}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${
-                      selectedCategory === 'Meat Products'
+                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${selectedCategory === 'Meat Products'
                         ? 'bg-yellow-400 text-gray-900'
                         : 'bg-white/20 text-white hover:bg-white/30'
-                    }`}
+                      }`}
                   >
                     <Beef className="w-4 h-4" />
                     Meat

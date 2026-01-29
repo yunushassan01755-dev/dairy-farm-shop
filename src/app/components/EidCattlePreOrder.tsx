@@ -58,7 +58,7 @@ const cattleList = [
     weight: 450,
     age: '2.5 years',
     price: 155000,
-    image: 'https://myimgs.org/storage/images/15392/WhatsApp Image 2026-01-12 at 00.jpeg',
+    image: '/image/Cow1.png',
     features: ['Natural Breed', 'Healthy & Active', 'Farm Raised'],
     badge: 'Featured',
     meatYield: '290 kg'
@@ -176,7 +176,7 @@ export function EidCattlePreOrder() {
   const [isPreOrderFormOpen, setIsPreOrderFormOpen] = useState(false);
   const [cattleForPreOrder, setCattleForPreOrder] = useState<any>(null);
   const [addedToCartId, setAddedToCartId] = useState<string | null>(null);
-  
+
   // Use cart context
   const { addToCart } = useCart();
 
@@ -185,11 +185,11 @@ export function EidCattlePreOrder() {
   const handlePreOrder = (cattle: any) => {
     // Add to cart instead of opening form directly
     addToCart(cattle);
-    
+
     // Show local notification near the card
     setAddedToCartId(cattle.id);
     setTimeout(() => setAddedToCartId(null), 3000);
-    
+
     toast.success(
       `${cattle.name} added to cart! Please go to cart to complete pre-order information.`,
       {
@@ -233,14 +233,14 @@ export function EidCattlePreOrder() {
     <div className="py-3 md:py-8 bg-gradient-to-b from-[#EAF4EC] to-white">
       <div className="container mx-auto px-3 md:px-4">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-3 md:mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <motion.div 
+          <motion.div
             className="inline-block relative bg-gradient-to-r from-[#2E6B3F] to-[#1f4a2a] text-white px-4 md:px-6 py-2 md:py-2.5 rounded-full font-bold mb-2 md:mb-4 text-sm md:text-base shadow-lg border-2 border-yellow-400"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -248,7 +248,7 @@ export function EidCattlePreOrder() {
             transition={{ duration: 0.6, type: "spring", stiffness: 200 }}
             whileHover={{ scale: 1.05 }}
           >
-            <motion.span 
+            <motion.span
               className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 via-yellow-300/30 to-yellow-400/20 rounded-full"
               animate={{
                 x: ['-100%', '100%'],
@@ -299,7 +299,7 @@ export function EidCattlePreOrder() {
 
         {/* ULTRA PREMIUM COLLECTION - Best in Class */}
         <div className="mb-16 max-w-7xl mx-auto" id="ultra-premium-cattle">
-          <motion.div 
+          <motion.div
             className="text-center mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -320,7 +320,7 @@ export function EidCattlePreOrder() {
           <PremiumCattleCards onAddToCart={handlePreOrder} openModal={openModal} />
 
           {/* Premium Collection Info */}
-          <motion.div 
+          <motion.div
             className="mt-10 bg-gradient-to-r from-yellow-100 via-yellow-50 to-yellow-100 border-2 border-yellow-400 rounded-2xl p-6 md:p-8 text-center shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -410,10 +410,10 @@ export function EidCattlePreOrder() {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                  
+
                   <h3 className="font-bold text-gray-900 mb-1 text-lg">{cattle.name}</h3>
                   <p className="text-sm text-gray-600 mb-3">{cattle.breed}</p>
-                  
+
                   <div className="grid grid-cols-2 gap-2 mb-3 text-xs">
                     <div className="bg-blue-50 p-2 rounded">
                       <p className="text-gray-500">Age</p>
@@ -442,7 +442,7 @@ export function EidCattlePreOrder() {
                       whileTap={{ scale: 0.95 }}
                       transition={{ duration: 0.1 }}
                     >
-                      <Button 
+                      <Button
                         className="w-full bg-[#2E6B3F] hover:bg-[#1f4a2a] text-white"
                         onClick={(e) => {
                           e.stopPropagation();
@@ -510,7 +510,7 @@ export function EidCattlePreOrder() {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                  
+
                   <h3 className="font-bold text-gray-900 text-lg mb-1 group-hover:text-[#2E6B3F] transition-colors">
                     {cattle.name}
                   </h3>
@@ -590,15 +590,15 @@ export function EidCattlePreOrder() {
         <div className="mt-12 bg-gradient-to-r from-[#2E6B3F] to-[#1f4a2a] text-white p-8 rounded-xl max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mb-4 text-center">📞 Need Help Choosing?</h3>
           <p className="text-center text-green-100 mb-6">
-            Our cattle experts are available to help you select the perfect animal for your Qurbani. 
+            Our cattle experts are available to help you select the perfect animal for your Qurbani.
             Call us or visit our farm for inspection.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold">
               📞 Call: 01924900128
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="bg-white/10 border-white text-white hover:bg-white/20"
               onClick={() => window.open('https://maps.google.com/?q=Bhakurta,Savar,Dhaka,Bangladesh', '_blank')}
             >
@@ -610,7 +610,7 @@ export function EidCattlePreOrder() {
         {/* Terms */}
         <div className="mt-8 text-center text-sm text-gray-600 max-w-3xl mx-auto">
           <p className="mb-2">
-            <strong className="text-gray-900">Pre-Order Terms:</strong> 30% advance payment required to book. 
+            <strong className="text-gray-900">Pre-Order Terms:</strong> 30% advance payment required to book.
             Balance payment before Eid. Free delivery within Dhaka city. All animals are vet-checked and healthy.
           </p>
           <p className="text-xs text-gray-500">
@@ -622,7 +622,7 @@ export function EidCattlePreOrder() {
       {/* Modal */}
       <AnimatePresence>
         {isModalOpen && selectedCattle && (
-          <motion.div 
+          <motion.div
             className="fixed inset-0 bg-black/50 z-50 overflow-y-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -630,7 +630,7 @@ export function EidCattlePreOrder() {
             onClick={closeModal}
           >
             <div className="min-h-screen w-full flex items-center justify-center p-4">
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl relative"
                 initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -650,15 +650,15 @@ export function EidCattlePreOrder() {
                       setZoomLevel(1);
                     }}
                   />
-                  
+
                   {/* Close Button */}
-                  <button 
+                  <button
                     className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-20"
                     onClick={closeModal}
                   >
                     <X size={24} className="text-gray-700" />
                   </button>
-                  
+
                   <div className="absolute top-6 left-6">
                     <span className={`${selectedCattle.badge === 'Ultra Premium' ? 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900' : badgeColors[selectedCattle.badge] + ' text-white'} text-sm font-bold px-4 py-2 rounded-full shadow-xl`}>
                       {selectedCattle.badge}
@@ -742,7 +742,7 @@ export function EidCattlePreOrder() {
                       <ShoppingCart size={20} className="mr-2" />
                       Pre-Order Now
                     </Button>
-                    
+
                     <Button
                       className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-gray-900 font-bold shadow-lg"
                       size="lg"
@@ -754,7 +754,7 @@ export function EidCattlePreOrder() {
                       <Phone size={20} className="mr-2" />
                       Call Now
                     </Button>
-                    
+
                     <Button
                       variant="outline"
                       className="border-2 border-[#2E6B3F] text-[#2E6B3F] hover:bg-[#EAF4EC] font-bold shadow-lg"
@@ -797,7 +797,7 @@ export function EidCattlePreOrder() {
       {/* Lightbox */}
       <AnimatePresence>
         {isLightboxOpen && selectedCattle && (
-          <motion.div 
+          <motion.div
             className="fixed inset-0 bg-black/95 flex items-center justify-center z-[60]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -805,7 +805,7 @@ export function EidCattlePreOrder() {
             onClick={() => setIsLightboxOpen(false)}
           >
             {/* Close Button */}
-            <button 
+            <button
               className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-white transition-colors z-20"
               onClick={() => setIsLightboxOpen(false)}
             >
@@ -824,11 +824,11 @@ export function EidCattlePreOrder() {
               >
                 <ZoomOut size={20} />
               </button>
-              
+
               <span className="text-sm font-bold text-gray-700 min-w-[60px] text-center">
                 {Math.round(zoomLevel * 100)}%
               </span>
-              
+
               <button
                 className="bg-[#2E6B3F] hover:bg-[#1f4a2a] text-white rounded-full p-2 transition-colors"
                 onClick={(e) => {
@@ -852,7 +852,7 @@ export function EidCattlePreOrder() {
             </div>
 
             {/* Image Container */}
-            <div 
+            <div
               className="relative w-full h-full flex items-center justify-center p-8"
               onClick={(e) => e.stopPropagation()}
             >
