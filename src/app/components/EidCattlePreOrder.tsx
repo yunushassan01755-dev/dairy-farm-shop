@@ -70,7 +70,7 @@ const cattleList = [
     weight: 480,
     age: '2.5 years',
     price: 165000,
-    image: 'https://myimgs.org/storage/images/15394/WhatsApp Image 2026-01-12 at 00.jpeg',
+    image: '/image/Cow2.png',
     features: ['Natural Cross Breed', 'Healthy & Active', 'Farm Raised'],
     badge: 'Featured',
     meatYield: '305 kg'

@@ -58,7 +58,7 @@ export function HeroSlider() {
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
-                transition={{ 
+                transition={{
                   duration: 1.2,
                   ease: [0.25, 0.1, 0.25, 1.0] // Butter smooth cubic-bezier easing
                 }}
@@ -66,11 +66,11 @@ export function HeroSlider() {
                 {/* SLIDE 1: Owner/Farm Banner */}
                 <div className="relative bg-gradient-to-br from-[#2E6B3F] via-[#1f4a2a] to-[#2E6B3F] p-2 md:p-10 lg:p-12 md:min-h-[700px] lg:min-h-[800px]">
                   {/* Decorative Pattern Overlay - Simplified */}
-                  <div className="absolute inset-0 opacity-5" 
-                       style={{
-                         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                         backgroundSize: '30px 30px'
-                       }}>
+                  <div className="absolute inset-0 opacity-5"
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                      backgroundSize: '30px 30px'
+                    }}>
                   </div>
 
                   <div className="relative grid lg:grid-cols-12 gap-3 md:gap-8 items-center">
@@ -81,9 +81,9 @@ export function HeroSlider() {
                         <div className="relative inline-block mb-2 md:mb-6">
                           <div className="absolute inset-0 bg-yellow-400 rounded-full blur-xl opacity-50"></div>
                           <div className="relative w-16 h-16 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto lg:mx-0 rounded-full border-4 md:border-6 border-yellow-400 overflow-hidden shadow-2xl">
-                            <img 
-                              src="/image/owner_picture.jpeg" 
-                              alt="MD. Mozzammel Haque" 
+                            <img
+                              src="/image/owner_picture.jpeg"
+                              alt="MD. Mozzammel Haque"
                               className="w-full h-full object-cover"
                               loading="lazy"
                             />
@@ -124,12 +124,12 @@ export function HeroSlider() {
                       >
                         {/* Premium Badge */}
                         <div className="inline-block mb-2 md:mb-8">
-                          <motion.div 
+                          <motion.div
                             className="relative"
-                            animate={{ 
+                            animate={{
                               scale: [1, 1.05, 1],
                             }}
-                            transition={{ 
+                            transition={{
                               duration: 3,
                               repeat: Infinity,
                               ease: "easeInOut"
@@ -161,18 +161,18 @@ export function HeroSlider() {
                           </h2>
                         </motion.div>
 
-                        <motion.p 
+                        <motion.p
                           className="text-white/95 text-xs md:text-lg lg:text-xl mb-2 md:mb-8 max-w-lg mx-auto leading-relaxed font-medium"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           transition={{ duration: 0.8, delay: 0.8 }}
                         >
-                          Pre-book your <span className="text-yellow-300 font-bold">healthy, halal-certified</span> cattle now. 
+                          Pre-book your <span className="text-yellow-300 font-bold">healthy, halal-certified</span> cattle now.
                           <span className="block mt-1 text-yellow-200/90 text-[10px] md:text-base">Limited premium stock available!</span>
                         </motion.p>
 
                         {/* Premium Feature Cards */}
-                        <motion.div 
+                        <motion.div
                           className="grid grid-cols-2 gap-2 md:gap-4 mb-2 md:mb-8 max-w-xl mx-auto"
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -184,11 +184,11 @@ export function HeroSlider() {
                             { IconComponent: BadgeDollarSign, text: 'Best Price', color: 'from-amber-500/20 to-amber-600/20', border: 'border-amber-400/30', iconColor: 'text-amber-300' },
                             { IconComponent: CreditCard, text: 'Easy Payment', color: 'from-purple-500/20 to-purple-600/20', border: 'border-purple-400/30', iconColor: 'text-purple-300' }
                           ].map((item, idx) => (
-                            <motion.div 
-                              key={idx} 
+                            <motion.div
+                              key={idx}
                               className={`relative bg-gradient-to-br ${item.color} backdrop-blur-md rounded-lg md:rounded-xl px-2 md:px-4 py-2 md:py-4 border ${item.border} shadow-lg overflow-hidden group cursor-pointer`}
-                              whileHover={{ 
-                                scale: 1.05, 
+                              whileHover={{
+                                scale: 1.05,
                                 y: -5,
                                 transition: { duration: 0.2 }
                               }}
@@ -226,9 +226,9 @@ export function HeroSlider() {
                               </span>
                             </Button>
                           </motion.div>
-                          
+
                           {/* Subtitle under button */}
-                          <motion.p 
+                          <motion.p
                             className="text-yellow-200/80 text-[10px] md:text-sm mt-1 md:mt-4 font-medium"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -259,7 +259,7 @@ export function HeroSlider() {
                           {[
                             { img: '/image/Cow1.png', code: 'CODE:101', name: 'Shobon' },
                             { img: 'https://myimgs.org/storage/images/15395/WhatsApp Image 2026-01-12 at 01.jpeg', code: 'CODE:103', name: 'Kallu' },
-                            { img: 'https://myimgs.org/storage/images/15394/WhatsApp Image 2026-01-12 at 00.jpeg', code: 'CODE:102', name: 'Padma' },
+                            { img: '/image/Cow2.png', code: 'CODE:102', name: 'Padma' },
                             { img: 'https://myimgs.org/storage/images/15397/WhatsApp Image 2026-01-12 at 01.jpeg', code: 'CODE:104', name: 'Bahadhur' }
                           ].map((cattle, idx) => (
                             <motion.div
@@ -271,15 +271,15 @@ export function HeroSlider() {
                                 // Scroll to the standard premium cattle section
                                 const cattleSection = document.getElementById('standard-cattle');
                                 if (cattleSection) {
-                                  cattleSection.scrollIntoView({ 
+                                  cattleSection.scrollIntoView({
                                     behavior: 'smooth',
                                     block: 'start'
                                   });
                                 }
                               }}
                             >
-                              <img 
-                                src={cattle.img} 
+                              <img
+                                src={cattle.img}
                                 alt={cattle.name}
                                 className="w-full h-16 md:h-32 object-cover"
                               />
@@ -305,7 +305,7 @@ export function HeroSlider() {
                           className="mt-2 md:mt-3 relative group overflow-hidden rounded-xl border-3 md:border-4 border-yellow-400 shadow-2xl cursor-pointer"
                           whileHover={{ scale: 1.03, y: -3 }}
                           transition={{ duration: 0.3 }}
-                          animate={{ 
+                          animate={{
                             boxShadow: [
                               "0 10px 30px rgba(250, 204, 21, 0.4)",
                               "0 15px 40px rgba(250, 204, 21, 0.7)",
@@ -316,7 +316,7 @@ export function HeroSlider() {
                             // Scroll to the ultra premium cattle section
                             const cattleSection = document.getElementById('ultra-premium-cattle');
                             if (cattleSection) {
-                              cattleSection.scrollIntoView({ 
+                              cattleSection.scrollIntoView({
                                 behavior: 'smooth',
                                 block: 'start'
                               });
@@ -324,7 +324,7 @@ export function HeroSlider() {
                           }}
                         >
                           <div className="relative h-36 md:h-40">
-                            <img 
+                            <img
                               src={lalBahadhurCattle.image}
                               alt={lalBahadhurCattle.name}
                               className="w-full h-full object-cover"
@@ -333,7 +333,7 @@ export function HeroSlider() {
                             />
                             {/* Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
-                            
+
                             {/* Crown Jewel Badge */}
                             <div className="absolute top-1 md:top-2 left-1 md:left-2 bg-gradient-to-r from-red-600 to-yellow-500 text-white px-1.5 md:px-2.5 py-0.5 md:py-1 rounded-full text-[8px] md:text-[10px] font-black flex items-center gap-1">
                               <Crown size={10} className="md:w-3 md:h-3" fill="currentColor" />
@@ -376,7 +376,7 @@ export function HeroSlider() {
                   </div>
 
                   {/* Bottom Trust Indicators */}
-                  <motion.div 
+                  <motion.div
                     className="relative mt-2 md:mt-8 pt-2 md:pt-8 border-t border-white/20"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

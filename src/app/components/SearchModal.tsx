@@ -132,7 +132,7 @@ const cattleProducts = [
     weight: 480,
     age: '2.5 years',
     price: 165000,
-    image: 'https://myimgs.org/storage/images/15394/WhatsApp Image 2026-01-12 at 00.jpeg',
+    image: '/image/Cow2.png',
     badge: 'Featured',
     category: 'Cattle',
     description: 'Natural Cross Breed, Healthy & Active, Farm Raised',
@@ -419,8 +419,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <button
                     onClick={() => setSelectedCategory('all')}
                     className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all ${selectedCategory === 'all'
-                        ? 'bg-yellow-400 text-gray-900'
-                        : 'bg-white/20 text-white hover:bg-white/30'
+                      ? 'bg-yellow-400 text-gray-900'
+                      : 'bg-white/20 text-white hover:bg-white/30'
                       }`}
                   >
                     All Products
@@ -428,8 +428,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <button
                     onClick={() => setSelectedCategory('Cattle')}
                     className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${selectedCategory === 'Cattle'
-                        ? 'bg-yellow-400 text-gray-900'
-                        : 'bg-white/20 text-white hover:bg-white/30'
+                      ? 'bg-yellow-400 text-gray-900'
+                      : 'bg-white/20 text-white hover:bg-white/30'
                       }`}
                   >
                     <Package className="w-4 h-4" />
@@ -438,8 +438,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <button
                     onClick={() => setSelectedCategory('Milk Products')}
                     className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${selectedCategory === 'Milk Products'
-                        ? 'bg-yellow-400 text-gray-900'
-                        : 'bg-white/20 text-white hover:bg-white/30'
+                      ? 'bg-yellow-400 text-gray-900'
+                      : 'bg-white/20 text-white hover:bg-white/30'
                       }`}
                   >
                     <Milk className="w-4 h-4" />
@@ -448,8 +448,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <button
                     onClick={() => setSelectedCategory('Meat Products')}
                     className={`px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${selectedCategory === 'Meat Products'
-                        ? 'bg-yellow-400 text-gray-900'
-                        : 'bg-white/20 text-white hover:bg-white/30'
+                      ? 'bg-yellow-400 text-gray-900'
+                      : 'bg-white/20 text-white hover:bg-white/30'
                       }`}
                   >
                     <Beef className="w-4 h-4" />
