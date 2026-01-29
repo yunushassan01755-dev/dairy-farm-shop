@@ -12,7 +12,7 @@ const products = [
     price: 120,
     unit: "per liter",
     rating: 5,
-    image: "https://myimgs.org/storage/images/15934/WhatsApp Image 2026-01-18 at 12.jpeg",
+    image: "/image/Milk.jpeg",
     badge: "Fresh",
     description: "Pure, fresh cow milk collected daily from our farm. Rich in calcium, protein, and essential vitamins.",
     benefits: ["100% Pure & Natural", "No Preservatives", "Farm Fresh Daily", "Rich in Nutrients"],
@@ -25,7 +25,7 @@ const products = [
     price: 650,
     unit: "per 500g",
     rating: 5,
-    image: "https://myimgs.org/storage/images/15678/WhatsApp Image 2026-01-15 at 02.jpeg",
+    image: "/image/Ghee.jpeg",
     badge: "Organic",
     description: "Traditional pure cow ghee made from organic milk. Perfect for cooking and health benefits.",
     benefits: ["100% Organic", "Traditional Method", "No Additives", "Rich Aroma"],
@@ -38,7 +38,7 @@ const products = [
     price: 920,
     unit: "per kg",
     rating: 4,
-    image: "https://myimgs.org/storage/images/15677/WhatsApp Image 2026-01-15 at 02.jpeg",
+    image: "/image/Beef.jpeg",
     badge: "Premium",
     description: "Premium quality fresh beef from grass-fed cattle. Tender, flavorful cuts perfect for all your cooking needs.",
     benefits: ["Grass-Fed Cattle", "Halal Certified", "Premium Cuts", "Fresh Daily"],
@@ -51,7 +51,7 @@ const products = [
     price: 120,
     unit: "per 500g",
     rating: 5,
-    image: "https://myimgs.org/storage/images/15687/WhatsApp Image 2026-01-15 at 03.jpeg",
+    image: "/image/Yogurt.jpeg",
     badge: "Fresh",
     description: "Creamy, delicious yogurt made from pure farm milk with live active cultures.",
     benefits: ["Probiotic Rich", "Natural Cultures", "No Artificial Flavors", "Digestive Health"],
@@ -64,7 +64,7 @@ const products = [
     price: 480,
     unit: "per 1000-1200g",
     rating: 4,
-    image: "https://myimgs.org/storage/images/15941/WhatsApp Image 2026-01-18 at 12.jpeg",
+    image: "/image/Chicken.jpeg",
     badge: "Fresh",
     description: "Farm-raised fresh chicken, antibiotic-free and healthy. Perfect for all recipes.",
     benefits: ["Antibiotic Free", "Farm Raised", "Halal Certified", "Tender & Fresh"],
@@ -149,7 +149,7 @@ export function FeaturedProducts() {
                   <h3 className="font-bold text-gray-900 mb-1.5 md:mb-2 text-sm md:text-lg group-hover:text-[#2E6B3F] transition-colors">
                     {product.name}
                   </h3>
-                  
+
                   <div className="flex items-center gap-0.5 md:gap-1 mb-2 md:mb-3">
                     {[...Array(5)].map((_, i) => (
                       <Star
@@ -166,7 +166,7 @@ export function FeaturedProducts() {
                     <span className="text-xs md:text-sm text-gray-500">{product.unit}</span>
                   </div>
 
-                  <Button 
+                  <Button
                     className="w-full bg-[#2E6B3F] hover:bg-[#1f4a2a] text-white text-xs md:text-sm py-2 md:py-2.5"
                     size="sm"
                     onClick={(e) => {
@@ -215,7 +215,7 @@ export function FeaturedProducts() {
                   <h3 className="font-bold text-gray-900 mb-1.5 md:mb-2 text-sm md:text-lg group-hover:text-[#2E6B3F] transition-colors">
                     {product.name}
                   </h3>
-                  
+
                   <div className="flex items-center gap-0.5 md:gap-1 mb-2 md:mb-3">
                     {[...Array(5)].map((_, i) => (
                       <Star
@@ -239,7 +239,7 @@ export function FeaturedProducts() {
                     <span className="text-xs md:text-sm text-gray-500">{product.unit}</span>
                   </div>
 
-                  <Button 
+                  <Button
                     className="w-full bg-[#2E6B3F] hover:bg-[#1f4a2a] text-white text-xs md:text-sm py-2 md:py-2.5"
                     size="sm"
                     onClick={(e) => {
@@ -258,8 +258,8 @@ export function FeaturedProducts() {
         </div>
 
         <div className="text-center mt-8 md:mt-12">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="lg"
             className="border-[#2E6B3F] text-[#2E6B3F] hover:bg-[#2E6B3F] hover:text-white px-6 md:px-8 text-sm md:text-base py-2 md:py-3"
             onClick={() => setShowAll(!showAll)}
@@ -298,7 +298,7 @@ export function FeaturedProducts() {
                     style={{ transform: `scale(${zoomLevel})` }}
                   />
                 </div>
-                
+
                 {/* Zoom Controls */}
                 <div className="absolute bottom-4 right-4 flex gap-2">
                   <button
@@ -322,7 +322,7 @@ export function FeaturedProducts() {
                     <RotateCw size={18} className="text-gray-700" />
                   </button>
                 </div>
-                
+
                 {/* Close Button */}
                 <button
                   className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-colors shadow-lg z-10"
@@ -414,7 +414,7 @@ export function FeaturedProducts() {
                 </div>
 
                 {/* Add to Cart Button */}
-                <Button 
+                <Button
                   className="w-full bg-[#2E6B3F] hover:bg-[#1f4a2a] text-white text-sm md:text-base py-5 md:py-6 text-base font-semibold shadow-lg"
                   onClick={() => {
                     handleAddToCart(selectedProduct);
