@@ -82,7 +82,7 @@ export function HeroSlider() {
                           <div className="absolute inset-0 bg-yellow-400 rounded-full blur-xl opacity-50"></div>
                           <div className="relative w-16 h-16 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto lg:mx-0 rounded-full border-4 md:border-6 border-yellow-400 overflow-hidden shadow-2xl">
                             <img 
-                              src="https://myimgs.org/storage/images/15508/PXL_20260113_041053658~3.jpg" 
+                              src="/image/owner_picture.jpeg" 
                               alt="MD. Mozzammel Haque" 
                               className="w-full h-full object-cover"
                               loading="lazy"
