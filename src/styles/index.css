@@ -1,0 +1,81 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Global Mobile Optimization */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+/* Hide scrollbar for horizontal scroll containers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Mobile optimization - prevent unwanted zoom and glitches */
+@media screen and (max-width: 768px) {
+  /* Ensure all input elements have minimum 16px font-size to prevent iOS zoom */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="search"],
+  input[type="password"],
+  input[type="url"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Prevent pull-to-refresh bounce effect */
+  body {
+    overscroll-behavior-y: contain;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Optimize touch interactions */
+  button,
+  a,
+  [role="button"] {
+    touch-action: manipulation;
+  }
+  
+  /* Prevent layout shifts and glitches on mobile */
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Prevent visual glitches during animations and transitions */
+* {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+/* Smooth scrolling for better mobile experience */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
