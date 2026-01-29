@@ -19,9 +19,9 @@ export function CompanyOverview() {
               <div className="w-14 h-14 md:w-24 md:h-24 rounded-full bg-white/10 border-2 md:border-4 border-white/20 overflow-hidden flex-shrink-0">
                 {/* TODO: Replace with actual owner photo */}
                 <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="https://myimgs.org/storage/images/15508/PXL_20260113_041053658~3.jpg" 
-                    alt="Trade License" 
+                  <img
+                    src="/image/owner_picture.jpeg"
+                    alt="Trade License"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -40,7 +40,7 @@ export function CompanyOverview() {
               <p className="text-gray-700 leading-snug md:leading-relaxed text-xs md:text-base">
                 <strong className="text-[#2E6B3F]">MOZZAMMEL DAIRY AND AGRO</strong> is a government-licensed dairy farm operating under the authority of Bhakurta Union Parishad. We are dedicated to providing the highest quality dairy products and sustainable cattle farming solutions.
               </p>
-              
+
               <p className="text-gray-700 leading-snug md:leading-relaxed text-[10px] md:text-sm">
                 Our farm specializes in <strong>sustainable cattle fattening</strong> and <strong>pure milk production</strong>. We maintain the highest standards of animal welfare and employ ethical farming practices.
               </p>
