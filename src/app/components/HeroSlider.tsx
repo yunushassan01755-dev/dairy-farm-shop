@@ -258,7 +258,7 @@ export function HeroSlider() {
                         <div className="grid grid-cols-2 gap-1.5 md:gap-3">
                           {[
                             { img: '/image/Cow1.png', code: 'CODE:101', name: 'Shobon' },
-                            { img: 'https://myimgs.org/storage/images/15395/WhatsApp Image 2026-01-12 at 01.jpeg', code: 'CODE:103', name: 'Kallu' },
+                            { img: '/image/Cow3.png', code: 'CODE:103', name: 'Kallu' },
                             { img: '/image/Cow2.png', code: 'CODE:102', name: 'Padma' },
                             { img: 'https://myimgs.org/storage/images/15397/WhatsApp Image 2026-01-12 at 01.jpeg', code: 'CODE:104', name: 'Bahadhur' }
                           ].map((cattle, idx) => (
