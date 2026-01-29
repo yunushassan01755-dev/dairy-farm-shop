@@ -89,7 +89,7 @@ const cattleList = [
   },
   {
     id: 'cattle-104',
-    name: 'বাহাদুর / Bahadhur',
+    name: 'ভোলা / Bhola',
     breed: 'Natural Deshi Cow',
     weight: 470,
     age: '2.5 years',

@@ -153,7 +153,7 @@ const cattleProducts = [
   },
   {
     id: 'cattle-104',
-    name: 'বাহাদুর / Bahadhur',
+    name: 'ভোলা / Bhola',
     breed: 'Natural Deshi Cow',
     weight: 470,
     age: '2.5 years',
@@ -162,7 +162,7 @@ const cattleProducts = [
     badge: 'Featured',
     category: 'Cattle',
     description: 'Natural Breed, Healthy & Active, Farm Raised',
-    keywords: ['bahadhur', 'cattle', 'cow', 'deshi', 'natural', '470', '160000', 'featured']
+    keywords: ['Bhola', 'cattle', 'cow', 'deshi', 'natural', '470', '160000', 'featured']
   },
   {
     id: 'cattle-105',
