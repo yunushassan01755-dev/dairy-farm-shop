@@ -178,10 +178,8 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-6 md:pt-8 mt-6 md:mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs md:text-sm text-gray-400">
-            <p>© 2026 Mozzammel Dairy and Agro. All Rights Reserved.</p>
-            <p className="text-center">
-              Designed with <span className="text-red-500">❤</span> for a better agricultural future
-            </p>
+            <p>©2023-2026 Mozzammel Dairy and Agro. All Rights Reserved.</p>
+            
           </div>
         </div>
       </div>
