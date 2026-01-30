@@ -7,7 +7,7 @@ const reviews = [
     location: "Mirpur, Dhaka",
     rating: 5,
     text: "ঈদে গরু কেনার আগে আমরা অনেক জায়গায় গিয়েছিলাম, কিন্তু এখানকার গরুগুলো দেখতে অনেক সুন্দর ও পরিষ্কার‑পরিচ্ছন্ন ছিল। কর্মীদের আচরণ ছিল অত্যন্ত ভদ্র ও পেশাদার। সবাইকে এখানে গরু কেনার জন্য রেকমেন্ড করব।",
-    image: "https://myimgs.org/storage/images/15943/WhatsApp Image 2026-01-17 at 11.jpeg"
+    image: "/image/Customer1.jpeg"
   },
   {
     id: 5,
@@ -15,7 +15,7 @@ const reviews = [
     location: "Ashulia, Dhaka",
     rating: 5,
     text: "আমার অভিজ্ঞতা অনুযায়ী, এই ফার্মে গরুর স্বাস্থ্য এবং যত্নের মান অনন্য। এখানে গ্রাহক সেবা এবং পরিষ্কার‑পরিচ্ছন্ন পরিবেশ সত্যিই প্রশংসার যোগ্য",
-    image: "https://myimgs.org/storage/images/15944/WhatsApp Image 2026-01-17 at 11.jpeg"
+    image: "/image/Customer2.jpeg"
   },
   {
     id: 6,
@@ -23,7 +23,7 @@ const reviews = [
     location: "Uttara, Dhaka",
     rating: 5,
     text: "ঈদুল আযহার জন্য গরু কেনার সময় এই ফার্মে এসেছি। গরুগুলোর স্বাস্থ্য, ফার্মের পরিচ্ছন্নতা এবং কর্মীদের শিষ্টাচার আমার প্রত্যাশার চেয়ে অনেক ভালো।",
-    image: "https://myimgs.org/storage/images/15945/WhatsApp Image 2026-01-17 at 11.jpeg"
+    image: "/image/Customer3.jpeg"
   },
   {
     id: 7,
@@ -31,7 +31,7 @@ const reviews = [
     location: "Dhanmondi, Dhaka",
     rating: 4,
     text: "অনলাইনে অর্ডার করার আগে একটু চিন্তা করছিলাম, তবে ঘি হাতে পেয়ে বোঝা গেল একেবারে খাঁটি। রান্নায় ব্যবহার করলে স্বাদ একদম গ্রামের ঘির মতো।",
-    image: "https://myimgs.org/storage/images/15947/486290606_1875311366629265_8813656555452204772_n.jpg"
+    image: "/image/Customer4.jpg"
   },
   {
     id: 8,
@@ -39,7 +39,7 @@ const reviews = [
     location: "Mohammadpur, Dhaka",
     rating: 5,
     text: "মাংসের মান একদম সন্তোষজনক। টুকরোগুলো ঠিকভাবে কাটা এবং প্যাক করা। অনলাইন অর্ডার সহজ, সেবা দ্রুত এবং পেশাদার",
-    image: "https://myimgs.org/storage/images/15948/101798888_718291532331260_244095399592198144_n.jpg"
+    image: "/image/Customer5.jpeg"
   },
   {
     id: 9,
@@ -47,7 +47,7 @@ const reviews = [
     location: "Gazipur, Dhaka",
     rating: 4,
     text: "মুরগি হাতে পেয়েছি, প্যাকেজিং ঠিকঠাক ছিল আর একদম তাজা। স্বাদও ভালো। একমাত্র সমস্যা, ডেলিভারি কিছুটা দেরিতে এসেছে।",
-    image: "https://myimgs.org/storage/images/15949/WhatsApp Image 2026-01-17 at 11.jpeg"
+    image: "/image/Customer6.jpg"
   },
   {
     id: 10,
@@ -55,7 +55,7 @@ const reviews = [
     location: "Savar, Dhaka",
     rating: 5,
     text: "আমি আসলে শুধু ফার্মটা দেখতে এসেছিলাম, কোনো কেনাকাট্টা করার পরিকল্পনা ছিল না। তবুও সবাই এত বন্ধুত্বপূর্ণ এবং আন্তরিক আচরণ করল ে ভালো লাগল।",
-    image: "https://myimgs.org/storage/images/15950/480295734_1785700135560691_1029869246353887258_n.jpg"
+    image: "/image/Customer7.jpg"
   }
 ];
 
